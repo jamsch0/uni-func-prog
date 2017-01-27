@@ -12,7 +12,17 @@
 // The JavaScript Linux emulator to re-familiarise yourself. Think carefully
 // about how this program works from the perspective of the user.
 
+open System
+
+let substituteEnvVar (arg : String) =
+    if arg.StartsWith "%" && arg.EndsWith "%" then
+        match Environment.GetEnvironmentVariable(arg.Substring(1, arg.Length - 2)) with
+        | value when isNull value -> arg
+        | value -> value
+    else
+        arg
+
 [<EntryPoint>]
 let main args =
-    String.concat " " args |> printfn "%s"
+    Array.map substituteEnvVar args |> String.concat " " |> printfn "%s"
     0
