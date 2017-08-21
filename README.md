@@ -1,2 +1,2 @@
 # uni-func-prog
-My solutions to weekly assignments set in university functional programming module.
+Solutions to weekly assignments and toy programming language parser coursework project for university functional programming module.

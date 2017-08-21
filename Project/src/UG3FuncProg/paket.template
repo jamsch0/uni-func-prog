@@ -1,0 +1,25 @@
+type project
+title
+    UG3FuncProg
+owners
+    Author not set
+authors 
+    Author not set
+projectUrl
+    https://github.com/[github-user]/UG3FuncProg
+iconUrl
+    https://raw.githubusercontent.com/[github-user]/UG3FuncProg/master/docs/files/img/logo.png
+licenseUrl
+    https://github.com/[github-user]/UG3FuncProg/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    fsharp
+summary
+    Summary not set
+description
+    Description not set
+
+
